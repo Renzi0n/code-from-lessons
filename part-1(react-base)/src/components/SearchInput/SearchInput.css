@@ -1,0 +1,17 @@
+.search-panel {
+  position: relative;
+}
+
+.search-input {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 3px;
+}
+
+.close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border: none;
+  background-color: inherit;
+}

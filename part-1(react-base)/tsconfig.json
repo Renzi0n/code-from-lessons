@@ -1,0 +1,81 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "es6"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "es2017",
+    "types": [
+      "@testing-library/cypress",
+      "@testing-library/jest-dom",
+      "@testing-library/react",
+      "cypress",
+      "jest",
+      "node",
+      "webpack-env",
+      "reflect-metadata"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "declarationMap": false,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "__mocks__/*": [
+        "src/__mocks__/*"
+      ],
+      "app/*": [
+        "src/app/*"
+      ],
+      "assets/*": [
+        "src/assets/*"
+      ],
+      "constants/*": [
+        "src/constants/*"
+      ],
+      "router/*": [
+        "src/router/*"
+      ],
+      "components/*": [
+        "src/components/*"
+      ],
+      "domains/*": [
+        "src/domains/*"
+      ],
+      "helpers/*": [
+        "src/helpers/*"
+      ],
+      "modules/*": [
+        "src/modules/*"
+      ],
+      "pages/*": [
+        "src/pages/*"
+      ],
+      "http/*": [
+        "src/http/*"
+      ]
+    }
+  },
+  "exclude": ["node_modules"]
+}
