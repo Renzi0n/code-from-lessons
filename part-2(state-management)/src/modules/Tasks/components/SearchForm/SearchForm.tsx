@@ -9,6 +9,7 @@ import './SearchForm.css';
 
 function SearchFormProto() {
   const { isTasksLoading, loadTasks } = TasksStoreInstance;
+
   const [filterType, setFilterType] = useState<FiltersType>(FILTER_TYPES.ALL);
   const [searchValue, setSearchValue] = useState<string>('');
 

@@ -3,7 +3,7 @@ import { SearchFormEntity, TaskEntity, TasksStatsEntity } from 'domains/index';
 import { TasksMock, TasksStatsMock } from '__mocks__/index';
 import { delay } from 'helpers/index';
 
-type PrivateFields = '_tasks' | '_tasksStats';
+type PrivateFields = '_tasks' | '_tasksStats' | '_isTasksLoading';
 
 export class TasksStore {
   constructor() {
@@ -22,7 +22,7 @@ export class TasksStore {
     });
   }
 
-  _isTasksLoading = false;
+  private _isTasksLoading = false;
 
   get isTasksLoading(): boolean {
     return this._isTasksLoading;
