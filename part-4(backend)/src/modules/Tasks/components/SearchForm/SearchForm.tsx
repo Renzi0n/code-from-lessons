@@ -10,7 +10,7 @@ import './SearchForm.css';
 
 function SearchFormProto() {
   const { isTasksLoading, updateTasks } = TasksStoreInstance;
-  const { control, handleSubmit, setValue, reset } = useForm<SearchFormEntity>({
+  const { control, handleSubmit, setValue } = useForm<SearchFormEntity>({
     defaultValues: DEFAULT_SEARCH_FORM,
   });
 
@@ -18,7 +18,6 @@ function SearchFormProto() {
     evt.preventDefault();
     handleSubmit((form) => {
       updateTasks(form);
-      reset();
     })();
   };
 

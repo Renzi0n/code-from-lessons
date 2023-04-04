@@ -15,7 +15,8 @@
     "lint:styles": "stylelint ./src/**/*.css",
     "fix:styles": "stylelint --fix ./src/**/*.css",
     "lint:ts": "eslint src/**/*.{ts,tsx}",
-    "fix:ts": "eslint src/**/*.{ts,tsx} --quiet --fix"
+    "fix:ts": "eslint src/**/*.{ts,tsx} --quiet --fix",
+    "swagger-types": "npx openapi-typescript http://ovz1.j50031265.px7zm.vps.myjino.ru/swagger.json --output src/http/model/todo.swagger.ts && eslint src/http/model/todo.swagger.ts --fix --no-ignore"
   },
   "author": "",
   "license": "ISC",

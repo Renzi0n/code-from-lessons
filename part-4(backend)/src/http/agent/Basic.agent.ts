@@ -9,8 +9,4 @@ export class BasicAgent {
       ...config,
     });
   }
-
-  get $http() {
-    return this._http;
-  }
 }
